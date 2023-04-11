@@ -1,12 +1,12 @@
 pipeline{
     agent {label 'docker'}
 environment {
-		DOCKER_LOGIN_CREDENTIALS=credentials('rajashekar85-Dockerhub')
+		DOCKER_LOGIN_CREDENTIALS=credentials('Rajashekar85-Dockerhub')
 	}
     stages {
   stage('checkout') {
     steps {
-      git 'https://github.com/rajashekar85/hello-world-war.git'
+      git 'https://github.com/Rajashekar85/hello-world-war.git'
     }
   }
 
