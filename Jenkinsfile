@@ -29,7 +29,6 @@ pipeline{
                 sh "docker run -itd -p 8080:8080 rajashekar85/rajashekar:$BUILD_NUMBER"
             }
         }
-
     }
     post {
         always {
