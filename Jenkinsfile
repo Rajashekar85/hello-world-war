@@ -26,7 +26,7 @@ pipeline{
 
         stage('deploy') {
             steps {
-                sh "docker run -itd -p 8080:8080 rajashekar85/rajashekar:$BUILD_NUMBER"
+                sh "docker run -itd -p 80:8080 rajashekar85/rajashekar:$BUILD_NUMBER"
             }
         }
     }
